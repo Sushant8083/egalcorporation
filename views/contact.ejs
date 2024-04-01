@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAGAL CORPORATION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/scrollToTop.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/fevegal.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/fevegal.png">
+</head>
+<style>
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+</style>
+
+<body>
+    <div class="main2">
+        <nav class="flex items-center justify-between px-6 py-3 border-b-2">
+            <div class="left">
+                <img class="h-[80px]" src="/images/EAGLE CORPORATION LOGO (Trasnparent)-01.png" alt="">
+            </div>
+            <div class="right">
+                <ul class="flex gap-6 items-center  ">
+                    <li class="text-[#16436A] font-bold"><a href="/">Home</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/">About</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/gallery">Gallery</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/contact">Contact</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/login">Login</a></li>
+                    <h4><i id="menu-btn" class="ri-menu-line"></i></h4>
+                </ul>
+            </div>
+        </nav>
+        <div id="slidebar">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+        </div>
+        <div class="contact-content" style="background-color: #2A6666;">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Contact Us</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="left md:w-1/2 text-white px-4">
+                    <h3 class="text-lg md:text-xl mb-4">Feel free to contact us for any queries or feedback👋</h3>
+                    <div class="bg-white p-4 rounded-md">
+                        <form action="/contactform" method="post" class="flex flex-col gap-4">
+                            <input type="text" name="cname" style="color: black;" placeholder="Your Name" class="p-2 border rounded-md"
+                                required>
+                            <input type="email" name="cemail" style="color: black;" placeholder="Your Email" class="p-2 border rounded-md"
+                                required>
+                            <textarea name="cmessage" placeholder="Your Message" style="color: black;" class="p-2 border rounded-md"
+                                required></textarea>
+                            <button type="submit"
+                                class="p-2 bg-[#2A6666] font-semibold text-white rounded-md hover:bg-blue-800 transition-colors">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="right md:w-1/2 mt-4 md:mt-0">
+                    <iframe class="w-full h-96 md:h-[400px]"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3807.0661066906437!2d78.42565977516537!3d17.408614883482194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI0JzMxLjAiTiA3OMKwMjUnNDEuNiJF!5e0!3m2!1sen!2sin!4v1711475129587!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="scroll-to-top" class="bounce" style="background-color: #2A6666;" onclick="scrollToTop()">
+            <span>&#8593;</span>
+        </div>
+    </div>
+
+    <!-- Sidebar JS -->
+    <script src="/javascripts/sidebar.js"></script>
+    <!-- Scroll to top JS -->
+    <script src="/javascripts/scrollToTop.js"></script>
+</body>
+
+</html>

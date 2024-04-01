@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAGLE CORPORATION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/scrollToTop.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/fevegal.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/fevegal.png">
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.4;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+    .active-button {
+        background-color: #2A6666 !important;
+
+        transition: all ease 0.5s;
+    }
+
+    nav .right ul li a {
+        transition: color 0.5s ease, transform 0.5s ease;
+    }
+
+    nav .right ul li a:hover {
+        color: #2A6666;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <nav class="flex items-center justify-between px-6 py-3 border-b-2">
+            <div class="left">
+                <a href="/"><img class="h-[80px]" src="/images/EAGLE CORPORATION LOGO (Trasnparent)-01.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul class="flex gap-6 items-center  ">
+                    <li class="text-[#16436A] font-bold"><a href="/">Home</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/">About</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/gallery">Gallery</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/contact">Contact</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/login">Login</a></li>
+                    <h4><i id="menu-btn" class="ri-menu-line"></i></h4>
+                </ul>
+            </div>
+        </nav>
+        <div id="slidebar">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <!-- <a href="/register">Register</a> -->
+            <a href="/login">Login</a>
+        </div>
+        <div class="page-1 ">
+            <div class="page-1-content">
+                <h1 class="text-[40px] md:text-5xl lg:text-6xl font-bold text-[#2A6666] leading-none"
+                    style="text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);">
+                    Welcome to EAGLE CORPORATION</h1>
+                <p class="text-[#fff] " style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                ">We are a team of dedicated professionals committed to delivering excellence in interior design services. Our mission is to create unforgettable spaces that redefine the standards of design.</p>
+
+                <button
+                    class="bounce text-white w-[fit-content] py-2 px-5 mt-2 font-semibold rounded-lg bg-[#2A6666]">Get
+                    started <i class="ri-arrow-down-double-line"></i></button>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1596204976717-1a9ff47f74ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div class="page-1-footer">
+                <div class="page-1-footer-item">
+                    <img src="https://www.stayatskyla.com/assets/img/icon-material-room-service.png" alt="">
+                    <h2>Room Service </h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="https://www.stayatskyla.com/assets/img/icon-awesome-broom.png" alt="">
+                    <h2>House Keeping</h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="https://www.stayatskyla.com/assets/img/icon-awesome-self-service.png" alt="">
+                    <h2>Self Service </h2>
+                </div>
+                <div class="page-1-footer-item">
+                    <img src="https://www.stayatskyla.com/assets/img/Icon-map-laundry.png" alt="">
+                    <h2>Laundry</h2>
+
+                </div>
+            </div> -->
+        </div>
+        <div class="page-2">
+            <h1 class="text-xl md:text-3xl lg:text-4xl font-bold text-[#2A6666] leading-none">WHAT WOULD YOU LIKE TO
+                CHOOSE?</h1>
+            <p class="mt-2 text-sm md:text-base lg:text-lg">Discover from our Collection to harmonize your
+                work-home-travel lifestyle
+            </p>
+
+            <div class="page-2-collapse mt-10">
+                <div class="page-2-buttons flex gap-4 justify-center mb-2">
+                    <button id="room1"
+                        class=" bg-[#2A6666] text-white py-2 px-3 rounded-lg font-semibold">Interior Designing
+                    </button>
+                    <button id="room2" class="bg-[#2A6666] text-white py-2 px-3 rounded-lg">Furniture</button>
+                </div>
+
+
+                <div id="roomImages" class="h-[fit-content] w-full border-2 p-2 flex flex-wrap justify-center gap-3">
+
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px] ">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/ki16-1-1709185338-Wj61R.avif" alt="Room 1 Image 1">
+                    </div>
+
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/modular k3.avif" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/modular k2.avif" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/intgerior design 1.avif" alt="Room 1 Image 1">
+                    </div>
+
+                    <div class="image-container" style=" position: relative;
+                        width: 350px;
+                        height: 300px;">
+                        <img class="w-full h-full object-cover" src="/images/interior design/interior design 3.avif"
+                            alt="Room 1 Image 1">
+                        <div class="overlay" style=" position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;">
+                            <a href="/gallery"> <button class="view-more" style=" background: #2A6666;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                cursor: pointer;
+                                animation: bounce 3s infinite;">Click to view more <i
+                                        class="ri-arrow-down-double-line"></i></button></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+        </div>
+        <div class="page-3">
+            <div class="left ">
+                <img src="/images/interior design/p4.avif" alt="">
+            </div>
+            <div class="right">
+                <h1 class="text-[23px] font-semibold">Well-rounded Amenities That Complete Your Stay</h1>
+                <div class="page-3-items  flex flex-wrap justify-center gap-8 md:gap-11">
+                    <div class="page-3-icons flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img.icons8-removebg-preview.png" alt="">
+                        <h3>Furniture</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img.icons8-removebg-preview (1).png" alt="">
+                        <h3>Interior Designing</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img.icons8-removebg-preview (2).png" alt="">
+                        <h3>Modular kitchen</h3>
+                    </div>
+                    <!-- <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img4.png" alt="">
+                        <h3>Power Backup </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img5.png" alt="">
+                        <h3>In-room Dining</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img6.png" alt="">
+                        <h3>Living Hall </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img7.png" alt="">
+                        <h3>LED TV </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img8.png" alt="">
+                        <h3>Parking</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="/images/page3img/img9.png" alt="">
+                        <h3>Washer Self Dry </h3>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="page-4 ">
+            <div class="page-4-content">
+
+                <h1 class="text-[30px] font-bold mb-4 text-[#16436A] font-bold
+                ">GOT A QUESTION?</h1>
+                <h3 class="text-md md:text-2xl mb-6" style="color: #646363;">Frequently Asked Questions</h3>
+
+                <div class="layout text-left">
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHY SHOULD I CHOOSE EAGAL CORPORATION?
+
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>You should choose Eagal Corporation for their unmatched expertise, innovative solutions, extensive resources, meticulous project management, stringent quality assurance, and exceptional customer service. They excel in delivering top-notch results tailored to your specific needs and preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHY IS EAGAL CORPORATION BETTER THAN A REGULAR INTERIOR DESIGNER'S?
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+
+                        </div>
+
+                        <div class="accordion__answer">
+                            <p>
+                                Eagal Corporation surpasses regular interior designers with its expertise, innovative solutions, scale, project management capabilities, quality assurance, and exceptional customer service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHAT MAKES EAGAL CORPORATION DIFFRENT FROM OTHER'S?
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>What sets Eagal Corporation apart from others is their unparalleled expertise, innovative approach, extensive resources, meticulous project management, stringent quality assurance standards, and commitment to exceptional customer service. They go above and beyond to deliver tailored solutions that exceed expectations and ensure the success of every project.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHAT YOU WILL GET IN EAGAL CORPORATION?
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+
+                        </div>
+
+                        <div class="accordion__answer">
+                            <p>
+                                
+With Eagal Corporation, you'll receive expertly designed interiors, functional modular kitchens, and custom furniture, all crafted with exceptional quality and tailored to your preferences. Their personalized approach ensures your vision is brought to life with excellence.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="part-1">
+                    <h1>Locations</h1>
+                    <div class="map-container flex flex-col gap-4 mt-2">
+                        <div class="sm:w-[300px] md:w-[400px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3807.4164173694585!2d78.37521128885497!3d17.3917925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9536d5932f65%3A0x23f3c9ac56716860!2sSRR%20Homes!5e0!3m2!1sen!2sin!4v1711612625141!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part-4">
+                    <h1>Let's Talk</h1>
+                    <ul>
+                        <li><i class="ri-map-pin-line"></i>&nbsp; <%= admin && admin.location1 ? admin.location1
+                                : 'Plot no 25/B Mla colony banjarahills Road no 12. Near: Citi Neuro Hospital Kalinga cultural Trust'
+                                %>
+                        </li>
+                        <li><i class="ri-map-pin-line"></i>&nbsp; <%= admin && admin.location2 ? admin.location2
+                                : 'Plot no 124/A. Mla colony banjarahills Road no 12 Near CMM (Center for Migration Medicine)'
+                                %>
+                        </li>
+                        <li><i class="ri-phone-line"></i>&nbsp; <%= admin && admin.contact ? admin.contact
+                                : '9346017770' %>
+                        </li>
+                        <li><i class="ri-mail-line"></i>&nbsp; <%= admin && admin.email ? admin.email
+                                : 'srikanth.mithrahomes@gmail.com' %>
+                        </li>
+
+                        <!-- 
+                    <li><i class="ri-map-pin-line"></i>&nbsp; Office Chowdhry Mohalla near Munazir Building Katihar Bihar 854105
+                    </li>
+                    <li><i class="ri-phone-line"></i>&nbsp;8092392331</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100381856</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100391856</li> -->
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="part-1">
+                    <h1>© 2024 EAGAL CORPORATION</h1>
+                </div>
+                <div class="part-2">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <!-- <i class="ri-twitter-line"></i> -->
+                    <!-- <i class="ri-instagram-line"></i> -->
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="bounce"  style="background-color: #2A6666;" onclick="scrollToTop()">
+        <span>&#8593;</span>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Hotel room change script -->
+    <script>
+        document.getElementById('room1').addEventListener('click', function () {
+            this.classList.add('active-button');
+            document.getElementById('room2').classList.remove('active-button');
+            document.getElementById('roomImages').innerHTML = `
+            <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/ki16-1-1709185338-Wj61R.avif" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/interior design 3.avif" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/intgerior design 1.avif" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="/images/interior design/modular k2.avif" alt="Room 1 Image 1">
+                    </div>
+
+                    <div class="image-container" style=" position: relative;
+                        width: 350px;
+                        height: 300px;">
+                        <img class="w-full h-full object-cover" src="/images/interior design/modular k3.avif"
+                            alt="Room 1 Image 1">
+                        <div class="overlay" style=" position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;">
+                            <a href="/gallery"> <button class="view-more" style=" background: #2A6666;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                cursor: pointer;
+                                animation: bounce 3s infinite;">Click to view more <i
+                                    class="ri-arrow-down-double-line"></i></button></a>
+                        </div>
+                    </div>
+
+    
+            <!-- Add more images as needed -->
+        `;
+        });
+
+        document.getElementById('room2').addEventListener('click', function () {
+            this.classList.add('active-button');
+            document.getElementById('room1').classList.remove('active-button');
+            document.getElementById('roomImages').innerHTML = `
+            <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnVybml0dXJlfGVufDB8fDB8fHww" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 1 Image 1">
+                    </div>
+                    <div class="overflow-hidden relative w-full md:w-[350px] md:h-[300px]">
+                        <img class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                            src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="Room 1 Image 1">
+                    </div>
+
+                    <div class="image-container" style=" position: relative;
+                        width: 350px;
+                        height: 300px;">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Room 1 Image 1">
+                        <div class="overlay" style=" position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;">
+                            <a href="/gallery"> <button class="view-more" style=" background: #2A6666;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                cursor: pointer;
+                                animation: bounce 3s infinite;">Click to view more <i
+                                    class="ri-arrow-down-double-line"></i></button></a>
+                        </div>
+                    </div>
+         
+            <!-- Add more images as needed -->
+        `;
+        });
+    </script>
+
+    <!-- FAQ Section JS -->
+    <script>
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener("click", () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                } else {
+                    event.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <!-- Sidebar JS -->
+    <script src="/javascripts/sidebar.js"></script>
+
+    <!-- Scroll to top JS -->
+    <script src="/javascripts/scrollToTop.js"></script>
+
+</body>
+
+</html>
